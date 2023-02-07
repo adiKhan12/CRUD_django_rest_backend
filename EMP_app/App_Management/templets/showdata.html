@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Dispaly the results of employess</title>
+</head>
+<body>
+    <center>
+        <h1>Company Employees</h1>
+        <hr>
+        <table border="=1">
+            <tr> 
+                <th>First Name</th>
+                <th>Employee Id</th>
+            </tr>
+            {% for data in Employees%}
+            <tr>
+            <td>
+                {{data.Full_Name}}
+            </td>
+            <td>
+                {{data.Team_Lead}}
+            </td>
+            {% endfor %}
+        <tr>
+        </table>
+    </center>
+</body>
